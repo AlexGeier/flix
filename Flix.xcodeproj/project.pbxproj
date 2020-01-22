@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		FA1AF07623D28E4C005F524E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA1AF07523D28E4C005F524E /* Assets.xcassets */; };
 		FA1AF07923D28E4C005F524E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA1AF07723D28E4C005F524E /* LaunchScreen.storyboard */; };
 		FA1AF08123D29650005F524E /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1AF08023D29650005F524E /* MovieCell.swift */; };
+		FACF737923D7EDF8006ADED5 /* walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = FACF737823D7EDF8006ADED5 /* walkthrough.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,8 @@
 		FA1AF07823D28E4C005F524E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA1AF07A23D28E4C005F524E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1AF08023D29650005F524E /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		FACF737723D7EB9B006ADED5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		FACF737823D7EDF8006ADED5 /* walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +53,6 @@
 				895001F4179A8B9A3A09669A /* Pods-Flix.debug.xcconfig */,
 				3B24B8313FB4BB2F5FAB6BA8 /* Pods-Flix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -65,6 +67,8 @@
 		FA1AF06023D28E49005F524E = {
 			isa = PBXGroup;
 			children = (
+				FACF737723D7EB9B006ADED5 /* README.md */,
+				FACF737823D7EDF8006ADED5 /* walkthrough.gif */,
 				FA1AF06B23D28E49005F524E /* Flix */,
 				FA1AF06A23D28E49005F524E /* Products */,
 				8CA05525580E66DD91D6C110 /* Pods */,
@@ -158,6 +162,7 @@
 				FA1AF07923D28E4C005F524E /* LaunchScreen.storyboard in Resources */,
 				FA1AF07623D28E4C005F524E /* Assets.xcassets in Resources */,
 				FA1AF07423D28E49005F524E /* Main.storyboard in Resources */,
+				FACF737923D7EDF8006ADED5 /* walkthrough.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
