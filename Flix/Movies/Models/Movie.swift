@@ -13,7 +13,20 @@ struct MovieResults: Decodable {
 }
 
 struct Movie: Decodable {
+    private let basePosterImageUrlString = "https://image.tmdb.org/t/p/w185"
+    private let baseBackdropImageUrlString = "https://image.tmdb.org/t/p/w500"
+    
     let title: String
+    
     let overview: String
+    
     let poster_path: String
+    var posterURL: URL? {
+        return URL(string: basePosterImageUrlString + poster_path)
+    }
+    
+    let backdrop_path: String
+    var backdropURL: URL? {
+        return URL(string: baseBackdropImageUrlString + backdrop_path)
+    }
 }

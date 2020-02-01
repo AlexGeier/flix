@@ -11,8 +11,6 @@ import SDWebImage
 import TinyConstraints
 
 class MovieCell: UITableViewCell {
-    let basePosterUrl = "https://image.tmdb.org/t/p/w185"
-
     private let titleLabel: UILabel = {
         let label = UILabel()
         label.numberOfLines = 1
@@ -27,9 +25,10 @@ class MovieCell: UITableViewCell {
         return label
     }()
     private let posterImage: UIImageView = {
-
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
+        imageView.layer.cornerRadius = 8
+        imageView.clipsToBounds = true
         
         return imageView
     }()
@@ -38,7 +37,7 @@ class MovieCell: UITableViewCell {
         didSet {
             titleLabel.text = movie.title
             overviewLabel.text = movie.overview
-            posterImage.sd_setImage(with: URL(string: basePosterUrl + movie.poster_path))
+            posterImage.sd_setImage(with: movie.posterURL)
         }
     }
     
@@ -60,12 +59,13 @@ class MovieCell: UITableViewCell {
             posterImage,
             verticalStackView
         ])
+        horizontalStackView.spacing = 8
         
         posterImage.heightToWidth(of: horizontalStackView, multiplier: 40 / 27 / 3)
         posterImage.widthToSuperview(multiplier: 1 / 3)
         
         contentView.addSubview(horizontalStackView)
-        horizontalStackView.edgesToSuperview()
+        horizontalStackView.edgesToSuperview(insets: .init(top: 8, left: 16, bottom: 8, right: 16))
     }
     
     required init?(coder: NSCoder) {

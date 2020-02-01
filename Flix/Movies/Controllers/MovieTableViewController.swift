@@ -39,5 +39,13 @@ class MovieTableViewController: UITableViewController {
         
         return cell
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath) as! MovieCell
+        
+        guard let movie = cell.movie else { return }
+        
+        navigationController?.pushViewController(MovieDetailViewController(movie: movie), animated: true)
+    }
 }
 

@@ -26,6 +26,7 @@ func fetchGenericJSONData<T: Decodable>(urlString: String, completion: @escaping
         }
         
         do {
+            print(String(data: data, encoding: String.Encoding.utf8))
             let jsonData = try JSONDecoder().decode(T.self, from: data)
             completion(.success(jsonData))
         } catch {
