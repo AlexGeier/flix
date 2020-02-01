@@ -27,8 +27,24 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let movieNavigationController = UINavigationController(rootViewController: movieTableViewController)
         movieNavigationController.navigationBar.prefersLargeTitles = true
+        movieNavigationController.tabBarItem.image = UIImage(systemName: "film")
+        movieNavigationController.tabBarItem.title = "Movies"
         
-        window?.rootViewController = movieNavigationController
+        let superheroViewController = MovieCollectionViewController()
+        superheroViewController.navigationItem.title = "Superhero Movies"
+        
+        let superheroNavigationController = UINavigationController(rootViewController: superheroViewController)
+        superheroNavigationController.navigationBar.prefersLargeTitles = true
+        superheroNavigationController.tabBarItem.image = UIImage(systemName: "person.3.fill")
+        superheroNavigationController.tabBarItem.title = "Superhero Movies"
+        
+        let tabViewController = UITabBarController()
+        tabViewController.viewControllers = [
+            movieNavigationController,
+            superheroNavigationController
+        ]
+        
+        window?.rootViewController = tabViewController
         window?.makeKeyAndVisible()
     }
     

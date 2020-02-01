@@ -29,4 +29,6 @@ struct Movie: Decodable {
     var backdropURL: URL? {
         return URL(string: baseBackdropImageUrlString + backdrop_path)
     }
+    
+    let release_date: String
 }

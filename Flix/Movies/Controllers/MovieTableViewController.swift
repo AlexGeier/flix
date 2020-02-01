@@ -14,7 +14,7 @@ class MovieTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         tableView.register(MovieCell.self, forCellReuseIdentifier: cellId)
-                
+        
         MovieService.shared.fetchPopularMovies { result in
             switch result {
             case .success(let movies):
@@ -43,9 +43,9 @@ class MovieTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath) as! MovieCell
         
-        guard let movie = cell.movie else { return }
-        
-        navigationController?.pushViewController(MovieDetailViewController(movie: movie), animated: true)
+        if let movie = cell.movie {
+            navigationController?.pushViewController(MovieDetailViewController(movie: movie), animated: true)
+        }
     }
 }
 

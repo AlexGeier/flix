@@ -15,18 +15,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-Wn-MLb">
-                                <rect key="frame" x="138" y="383.5" width="138" height="139"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="138" id="ByT-u9-43t"/>
-                                    <constraint firstAttribute="height" constant="139" id="M8U-no-Wbj"/>
-                                </constraints>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="D4Y-rm-OKc">
+                                <rect key="frame" x="138" y="363" width="138" height="180"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="launch_image" translatesAutoresizingMaskIntoConstraints="NO" id="Flz-Wn-MLb">
+                                        <rect key="frame" x="0.0" y="0.0" width="138" height="139"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="138" id="ByT-u9-43t"/>
+                                            <constraint firstAttribute="height" constant="139" id="M8U-no-Wbj"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flix" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dd-su-wbC">
+                                        <rect key="frame" x="0.0" y="139" width="138" height="41"/>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Flz-Wn-MLb" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="h7B-nM-A1H"/>
-                            <constraint firstItem="Flz-Wn-MLb" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="oEF-uP-gjL"/>
+                            <constraint firstItem="D4Y-rm-OKc" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="nm8-7R-CiG"/>
+                            <constraint firstItem="D4Y-rm-OKc" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xqq-cu-umV"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

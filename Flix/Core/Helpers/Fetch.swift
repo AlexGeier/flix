@@ -8,7 +8,14 @@
 
 import Foundation
 
-func fetchGenericJSONData<T: Decodable>(urlString: String, completion: @escaping (Result<T, Error>) -> ()) {
+enum FetchError: Error {
+    case badURL
+    case API
+    case noData
+    case decode
+}
+
+func fetchJSON<T: Decodable>(urlString: String, completion: @escaping (Result<T, Error>) -> ()) {
     guard let url = URL(string: urlString) else {
         completion(.failure(FetchError.badURL))
         return
@@ -26,7 +33,6 @@ func fetchGenericJSONData<T: Decodable>(urlString: String, completion: @escaping
         }
         
         do {
-            print(String(data: data, encoding: String.Encoding.utf8))
             let jsonData = try JSONDecoder().decode(T.self, from: data)
             completion(.success(jsonData))
         } catch {
