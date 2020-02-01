@@ -22,6 +22,7 @@
 		FA42E69823DFAC3E0007DF61 /* MovieDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA42E69723DFAC3E0007DF61 /* MovieDetailViewController.swift */; };
 		FAB2704223E612B100070F54 /* MovieCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2704123E612B100070F54 /* MovieCollectionViewController.swift */; };
 		FAB2704423E613A000070F54 /* PosterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB2704323E613A000070F54 /* PosterCell.swift */; };
+		FAB2704623E61BF000070F54 /* walkthrough2.gif in Resources */ = {isa = PBXBuildFile; fileRef = FAB2704523E61BEF00070F54 /* walkthrough2.gif */; };
 		FACF737923D7EDF8006ADED5 /* walkthrough.gif in Resources */ = {isa = PBXBuildFile; fileRef = FACF737823D7EDF8006ADED5 /* walkthrough.gif */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		FA42E69723DFAC3E0007DF61 /* MovieDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailViewController.swift; sourceTree = "<group>"; };
 		FAB2704123E612B100070F54 /* MovieCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCollectionViewController.swift; sourceTree = "<group>"; };
 		FAB2704323E613A000070F54 /* PosterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PosterCell.swift; sourceTree = "<group>"; };
+		FAB2704523E61BEF00070F54 /* walkthrough2.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough2.gif; sourceTree = "<group>"; };
 		FACF737723D7EB9B006ADED5 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		FACF737823D7EDF8006ADED5 /* walkthrough.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = walkthrough.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,6 +85,7 @@
 			children = (
 				FACF737723D7EB9B006ADED5 /* README.md */,
 				FACF737823D7EDF8006ADED5 /* walkthrough.gif */,
+				FAB2704523E61BEF00070F54 /* walkthrough2.gif */,
 				FA1AF06B23D28E49005F524E /* Flix */,
 				FA1AF06A23D28E49005F524E /* Products */,
 				8CA05525580E66DD91D6C110 /* Pods */,
@@ -244,6 +247,7 @@
 			files = (
 				FA1AF07923D28E4C005F524E /* LaunchScreen.storyboard in Resources */,
 				FA1AF07623D28E4C005F524E /* Assets.xcassets in Resources */,
+				FAB2704623E61BF000070F54 /* walkthrough2.gif in Resources */,
 				FACF737923D7EDF8006ADED5 /* walkthrough.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
